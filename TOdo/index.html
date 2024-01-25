@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+<body>
+
+    <div class="center-container">
+        <div class="tabs">
+            <button id="todoTab" class="active" onclick="switchTab('todo')">Todo</button>
+            <button id="notesTab" onclick="switchTab('notes')">Notes</button>
+        </div>
+        <div id="todoSection" class="section active">
+            <h1>Todo App</h1>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Enter your task...">
+                <input type="date" id="dueDateInput">
+                <button id="addButton" onclick="addTask()">Add Task</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+        <div id="notesSection" class="section">
+            <h1>Notes App</h1>
+            <div class="input-container">
+                <textarea id="noteInput" placeholder="Enter your note..."></textarea>
+                <button id="addNoteButton" onclick="addNote()">Add Note</button>
+            </div>
+            <ul id="noteList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
